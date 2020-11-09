@@ -115,4 +115,5 @@ void RoutePlanner::AStarSearch() {
         current_node = NextNode();
         AddNeighbors(current_node);
     }
+  	m_Model.path = ConstructFinalPath(this->end_node);
 }
